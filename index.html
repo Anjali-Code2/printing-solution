@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Printing Solution</title>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <main>
+        <!-- header -->
+        <header class="head">
+            <div class="logo">
+                <img src="Images/logo.jpg" alt="logo image">
+            </div>
+
+            <div class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Our Product</a></li>
+                <li><a href="#">About Us</a></li>
+            </div>
+
+            <div class="cart" onclick="toggleCart()">
+                <i class="ri-shopping-cart-fill"></i>
+                <span id="cart-count">0</span>
+              </div>
+
+              <div id="cart-popup" class="cart-popup">
+                <h3>Your Cart</h3>
+                <ul id="cart-items"></ul>
+                <p>Subtotal: $<span id="cart-total">0</span></p>
+                <button onclick="toggleCart()">Close</button>
+              </div>
+        </header>
+
+        <!-- product -->
+        <section class="product">
+            <div class="pro_one">
+                <img src="Images/1.jpg" alt="one product">
+
+                <div class="name">
+                    <h5>Product eight</h5>
+                </div>
+
+                <div class="buy">
+                    <span>Price : $22</span>
+                    <a href="#" onclick="addToCart(event, 'Product One', 22)">Buy Now</a>
+                </div>
+            </div>
+            <div class="pro_one">
+                <img src="Images/2.jpg" alt="one product">
+
+                <div class="name">
+                    <h5>Product eight</h5>
+                </div>
+
+                <div class="buy">
+                    <span>Price : $22</span>
+                    <a href="#" onclick="addToCart(event, 'Product One', 22)">Buy Now</a>
+                </div>
+            </div>
+            <div class="pro_one">
+                <img src="Images/3.jpg" alt="one product">
+
+                <div class="name">
+                    <h5>Product eight</h5>
+                </div>
+
+                <div class="buy">
+                    <span>Price : $22</span>
+                    <a href="#" onclick="addToCart(event, 'Product One', 22)">Buy Now</a>
+                </div>
+            </div>
+            <div class="pro_one">
+                <img src="Images/4.jpg" alt="one product">
+
+                <div class="name">
+                    <h5>Product eight</h5>
+                </div>
+
+                <div class="buy">
+                    <span>Price : $22</span>
+                    <a href="#" onclick="addToCart(event, 'Product One', 22)">Buy Now</a>
+                </div>
+            </div>
+            <div class="pro_one">
+                <img src="Images/5.jpg" alt="one product">
+
+                <div class="name">
+                    <h5>Product eight</h5>
+                </div>
+
+                <div class="buy">
+                    <span>Price : $22</span>
+                    <a href="#" onclick="addToCart(event, 'Product One', 22)">Buy Now</a>
+                </div>
+            </div>
+            <div class="pro_one">
+                <img src="Images/6.jpg" alt="one product">
+
+                <div class="name">
+                    <h5>Product eight</h5>
+                </div>
+
+                <div class="buy">
+                    <span>Price : $22</span>
+                    <a href="#" onclick="addToCart(event, 'Product One', 22)">Buy Now</a>
+                </div>
+            </div>
+            <div class="pro_one">
+                <img src="Images/7.jpg" alt="one product">
+
+                <div class="name">
+                    <h5>Product eight</h5>
+                </div>
+
+                <div class="buy">
+                    <span>Price : $22</span>
+                    <a href="#" onclick="addToCart(event, 'Product One', 22)">Buy Now</a>
+                </div>
+            </div>
+            <div class="pro_one">
+                <img src="Images/8.jpg" alt="one product">
+
+                <div class="name">
+                    <h5>Product eight</h5>
+                </div>
+
+                <div class="buy">
+                    <span>Price : $22</span>
+                    <a href="#" onclick="addToCart(event, 'Product One', 22)">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- copyright -->
+
+        <section class="copyright">
+            <p>&copy; 2025 Printing Solution. All Rights Reserved.</p>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>

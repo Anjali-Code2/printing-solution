@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cart {
+    font-size: 1.5rem;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* product */
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 5rem;
+}
+
+.pro_one img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    padding-top: 2rem;
+}
+
+.pro_one h5 {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.buy {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.buy a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart-popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.cart-popup.active {
+    display: block;
+}
+
+.cart span {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+/* media quary */
+
+@media screen and (max-width: 600px) {
+    .head {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .menu li {
+      padding: 5px;
+    }
+  
+    .cart {
+      margin-top: 10px;
+    }
+  
+    .product {
+      padding: 2rem;
+      justify-content: center;
+    }
+  
+    .pro_one img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .cart-popup {
+      width: 90%;
+      right: 5%;
+    }
+  }
+  
+  /* Tablet Devices (601px to 900px) */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .product {
+      padding: 3rem;
+    }
+  
+    .pro_one img {
+      width: 250px;
+      height: 350px;
+    }
+  }
